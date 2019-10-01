@@ -25,5 +25,23 @@ namespace UnitTestProject2
             bool result3 = Program.IsPrime(3);
             Assert.AreEqual(false, result3);
         }
+        [TestMethod]
+        public void Ceil()
+         {
+             int result7 = Program.Ceil(2.3f);
+             Assert.AreEqual(3, result7);
+
+             int result8 = Program.Ceil(-2.3f);
+             Assert.AreEqual(-2, result8);
+         }
+        [TestMethod]
+        public void Floor()
+        {
+            int result7 = Program.Floor(2.3f);
+            Assert.AreEqual(2, result7);
+
+            int result8 = Program.Floor(-3.3f);
+            Assert.AreEqual(-4, result8);
+        }
     }
 }

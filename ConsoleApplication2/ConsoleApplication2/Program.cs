@@ -33,5 +33,27 @@ namespace ConsoleApplication2
             }
             return true;
         }
+        public static int Ceil(float x)
+        {
+            if (x != (int)x)
+            {
+                if (x > 0)
+                {
+                    return (int)x + 1;
+                }
+            }
+            return (int)x;
+        }
+        public static int Floor(float x)
+        {
+            if (x != (int)x)
+            {
+                if (x < 0)
+                {
+                    return (int)x - 1;
+                }
+            }
+            return (int)x;
+        }
     }
 }
