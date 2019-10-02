@@ -10,7 +10,8 @@ namespace ConsoleApplication2
     {
         static void Main(string[] args)
         {
-
+            Console.WriteLine(Rand1());
+            Console.WriteLine(Rand2());
         }
         public static bool IsEven(int n)
         {
@@ -54,6 +55,22 @@ namespace ConsoleApplication2
                 }
             }
             return (int)x;
+        }
+        public static int Square(int n)
+        {
+            return n * n;
+        }
+        public static int Cube(int n)
+        {
+            return Square(n) * n;
+        }
+        public static int Rand1()
+        {
+            return new Random().Next();
+        }
+        public static float Rand2()
+        {
+            return (float)new Random().NextDouble();
         }
     }
 }

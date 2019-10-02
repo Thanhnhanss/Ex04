@@ -43,5 +43,23 @@ namespace UnitTestProject2
             int result8 = Program.Floor(-3.3f);
             Assert.AreEqual(-4, result8);
         }
+        [TestMethod]
+        public void Square()
+        {
+            int result5 = Program.Square(4);
+            Assert.AreEqual(16, result5);
+
+            int result6 = Program.Square(2);
+            Assert.AreEqual(4, result6);
+        }
+        [TestMethod]
+        public void Cube()
+        {
+            int n1 = Program.Cube(2);
+            Assert.AreEqual(8, n1);
+
+            int n2 = Program.Cube(5);
+            Assert.AreEqual(125,n2);
+        }
     }
 }
