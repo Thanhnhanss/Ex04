@@ -72,5 +72,9 @@ namespace ConsoleApplication2
         {
             return (float)new Random().NextDouble();
         }
+        public static int Factorial(int n)
+        {
+
+        }
     }
 }
