@@ -12,6 +12,7 @@ namespace ConsoleApplication2
         {
             Console.WriteLine(Rand1());
             Console.WriteLine(Rand2());
+            Console.WriteLine(Factorial(2));
         }
         public static bool IsEven(int n)
         {
@@ -74,7 +75,12 @@ namespace ConsoleApplication2
         }
         public static int Factorial(int n)
         {
-
+            int x = 1;
+            for(int i = 1; i<=n; i++)
+            {
+                x *= 1;
+            }
+            return x;
         }
     }
 }
